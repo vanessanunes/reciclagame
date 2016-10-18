@@ -11,7 +11,14 @@ public class Dado1 {
         for (int i=0; i<6; i++){
             double numero = Math.random()*6;
             double valorAleatorio = Math.round(numero);
-            System.out.println(valorAleatorio);
+            if(valorAleatorio == 0){
+                valorAleatorio = 1.0;
+                System.out.println(valorAleatorio);
+            }
+            else {
+                System.out.println(valorAleatorio);
+            }
+            
         }
     }
     
